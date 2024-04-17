@@ -1,58 +1,126 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Endless Abyss",
+    "Credits": "Created by Vincent Fu (viwfu@ucsc.edu)",
+    "InitialLocation": "Cryopod Chamber",
+    "ReturnTo": "Bar",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Cryopod Chamber": {
+            "Body": "You wake up disoriented, the frost on your eyelashes melting swiftly as the chamber's warmth engulfs you. Panels blink intermittently, casting eerie shadows on the stark white walls. A hushed silence clings stubbornly, disturbed only by the hum of the life-support system.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "Go through door",
+                    "Target": "Locker Rooms"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "Locker Rooms": {
+            "Body": "The locker rooms echo with metallic whispers of the absent crowd. Rows of lockers, shiny and unblemished, parade across the entire span. A strong scent of disinfectant clings to the air - a sterile reminder of the desolation.",
             "Choices": [
+                
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Walk into the Dining Hall Commons",
+                    "Target": "Dining Hall Commons"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Go back",
+                    "Target": "Cryopod Chamber"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Dining Hall Commons": {
+            "Body": "The expansive dining hall looms large, long abandoned tables lined like skeletal remains. Ghostly echoes of laughter and banter seem to resonate from the eerily gleaming cutlery and dishware. A grand, yet fossilized mural of an unknown nebula dominates the far wall.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Go to Open Lounge",
+                    "Target": "Open Lounge"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Retreat to the Locker Rooms",
+                    "Target": "Locker Rooms"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Open Lounge": {
+            "Body": "The Lounge, once a sanctuary of camaraderie, stands ethereal, gazing into the abyss of space. Comfy seats sit untouched, high-end screens reflect your solitary image. A strange kind of tranquility blankets the area, punctuated by the continuous drone of the spaceship.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Head to the Gym",
+                    "Target": "Gym"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Return to Dining Hall Commons",
+                    "Target": "Dining Hall Commons"
+                }
+            ],
+            "Interactions": {
+                "Access Pass": {
+                    "Text": "Buy Access Pass",
+                    "Result": "You purchased the Access Pass."
+                }
+            }
+        },
+        "Gym": {
+            "Body": "The gym stands in dormant resplendence, high tech machinery standing like monuments to health. Pristine motivational posters plaster the walls, losing their pertinence in the jarring emptiness. The treadmills stare blankly - anticipating footfalls that never come.",
+            "Choices": [
+                {
+                    "Text": "Head to the Swimming Pool",
+                    "Target": "Swimming Pool"
+                },
+                {
+                    "Text": "Retrace steps to Open Lounge",
+                    "Target": "Open Lounge"
+                }
+            ],
+            "Interactions": {
+                "Dumbbell": {
+                    "Text": "Work out with dumbbells",
+                    "Result": "You start working out with the dumbbells, your muscles straining with each repetition. Your heart rate rises, and you can feel the adrenaline pumping through your body."
+                }
+            }
+        },
+        "Swimming Pool": {
+            "Body": "The pool area gleams under artificial lights - water untouched, ethereally reflecting the emptiness. Rubber plants in the corners give an unnatural touch of green. Deep end beckons ominously, while diving boards stand arrogantly - testing your resolve.",
+            "Choices": [
+                {
+                    "Text": "Head to the Bar",
+                    "Target": "Bar"
+                },
+                {
+                    "Text": "Return to the Gym",
+                    "Target": "Gym"
+                }
+            ],
+            "Interactions": {
+                "Swim": {
+                    "Text": "Swim in the pool",
+                    "Result": "You dive into the calm water. The cool liquid surrounds you, relaxing your muscles and your mind."
+                }
+            }
+        },
+        "Bar": {
+            "Body": "The bar area is loaded with untouched bottles of exotic beverages. Neon lights bathe the room in a cool luminous glow, while a static-filled interstellar jukebox croons lonesome tunes. Counter-tops mirror your haunted expressions, mimicking the starkness overtaking you.",
+            "Choices": [
+                {
+                    "Text": "Proceed to the Observation Deck",
+                    "Target": "Observation Deck"
+                },
+                {
+                    "Text": "Go back to the Swimming Pool",
+                    "Target": "Swimming Pool"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "ObservationDeck": {
+            "Body": "The splendor of the Observation Deck grips you, sweeping, clear views of the universe stretch out endlessly; stars sparkle like forgotten dreams, galaxies swirl in a hypnotic dance. The eerie beauty of your isolation comes alive here. In the silence, the universe speaks volumes.",
+            "Choices": [
+                {
+                    "Text": "Proceed to the Observation Deck",
+                    "Target": "Cryopod Chamber"
+                }
+                
+            ]
         }
+        
+        
     }
 }
