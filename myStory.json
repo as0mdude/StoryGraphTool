@@ -3,6 +3,7 @@
     "Credits": "Created by Vincent Fu (viwfu@ucsc.edu)",
     "InitialLocation": "Cryopod Chamber",
     "ReturnTo": "Bar",
+    "AccessAccept": "ObservationDeck",
     "Locations": {
         "Cryopod Chamber": {
             "Body": "You wake up disoriented, the frost on your eyelashes melting swiftly as the chamber's warmth engulfs you. Panels blink intermittently, casting eerie shadows on the stark white walls. A hushed silence clings stubbornly, disturbed only by the hum of the life-support system.",
@@ -114,11 +115,14 @@
             "Body": "The splendor of the Observation Deck grips you, sweeping, clear views of the universe stretch out endlessly; stars sparkle like forgotten dreams, galaxies swirl in a hypnotic dance. The eerie beauty of your isolation comes alive here. In the silence, the universe speaks volumes.",
             "Choices": [
                 {
-                    "Text": "Proceed to the Observation Deck",
-                    "Target": "Cryopod Chamber"
+                    "Text": "Proceed back to the Cryopod Chamber",
+                    "Target": "Cryopod Chamber 2"
                 }
                 
             ]
+        },
+        "Cryopod Chamber 2": {
+            "Body": "You return to the Cryopod Chamber - with memories of your past life flooding back like a stream of water finally unblocked. You enter the 5-digit code found on the back of the Observatory Pass, climb back into the pod, and swiftly drift off to sleep. Goodnight."
         }
         
         
